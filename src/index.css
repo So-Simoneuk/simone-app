@@ -24,12 +24,13 @@ font-family: "Roboto", sans-serif;
 
 }
 
-search-form-button {
-    background: purple;
-    padding: 15px 20px;
+.search-form-button {
+    background: #d2afff;
+    color: white;
     border: none;
     border-radius: 6px;
-    color: white;
     margin-left: 5px;
     font-size: 16px;
+    padding:15px 30px
+   
 }
