@@ -82,15 +82,16 @@ margin: 20px 0 10px;
 }
 
 .weather-app-temperature {
-    font-size: 88px;
-    margin-left: 5px;
-    font-weight: bold;
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: 500;
+    
 
 }
 
 .weather-app-icon   {
-    font-size: 44px;
-    margin-top:22px;
+width: 88px;
+height: 88px;
 
 }
 
