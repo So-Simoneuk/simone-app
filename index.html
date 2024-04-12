@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href = "src/index.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +15,17 @@
 <body>
     <div class="weather-app">
     <header>
-        <form class="search-form" 
-            id="search-form">
-             <input type="search" 
-             placeholder="Enter a city" 
-             required  class="search-form-input" 
-            id="search-form-input" />
-            <input type="submit" 
-            value="Search" 
-            class="search-form-button" 
+
+        <form id="search-form">
+            <input
+              type="search"
+              placeholder="Enter a city.."
+              required
+              class="search-input"
+              id="search-form-input"
             />
-        </form>
+            <input type="submit" value="Search" class="search-button" />
+          </form>
        
     
     </header>
