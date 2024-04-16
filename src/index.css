@@ -107,3 +107,19 @@ footer {
     font-size: 11px;
     color: #a6a6a6;
 }
+
+.weather-forecast-date
+{
+color: #a6a6a6;
+
+}
+.weather-forecaste-max
+{
+    font-weight: bold;
+    color: #d2afff;
+}
+.weather-forecaste-min
+{
+    opacity: 0.7;
+    color: #d2afff;
+}
