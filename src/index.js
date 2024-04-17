@@ -20,6 +20,8 @@ function refreshWeather(response)
     iconElement.innerHTML =`<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
 }
 
+getForecast(city);
+
 function formatDate(date) {
     let minutes = date.getMinutes();
     let hours = date.getHours();
@@ -57,9 +59,16 @@ function handleSearchSubmit(event)
     searchCity(searchInput.value);
 }
 
+function getForecast(city)
+{
+let apiKey ="14cfdda3fo2fca08bfa9c4f19a5dat70";
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+axios(apiUrl).then(displayForecast);
+}
 
 
-function displayForecast() {
+function displayForecast() 
+{
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -89,5 +98,6 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("High Wycombe");
 displayForecast();
+
 
     
