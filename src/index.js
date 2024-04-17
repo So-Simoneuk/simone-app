@@ -56,8 +56,6 @@ function handleSearchSubmit(event)
     cityElement.innerHTML =searchInput.value;
     searchCity(searchInput.value);
 }
-let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 
 
@@ -86,6 +84,8 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHtml;
 }
 
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("High Wycombe");
 displayForecast();
